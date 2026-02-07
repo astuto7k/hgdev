@@ -289,10 +289,10 @@ export const Portfolio: React.FC = () => {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {animationGifs.map((gif, i) => (
-                <div key={i} className="glass-card rounded-[2rem] overflow-hidden border-white/5 group aspect-video relative shadow-xl hover:border-[#2B9FE6]/30 transition-all duration-500">
+                <div key={i} className="glass-card rounded-[2rem] overflow-hidden border-white/5 group aspect-video relative shadow-xl hover:border-[#2B9FE6]/30 transition-all duration-500 flex items-center justify-center">
                   <iframe
-                    src={`${gif.url}?autoplay=1&mute=1&loop=1&playlist=${gif.url.split('/').pop()}&controls=0&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0`}
-                    className="w-full h-full object-cover pointer-events-none scale-110"
+                    src={`${gif.url}?autoplay=1&mute=1&loop=1&playlist=${gif.url.split('/').pop()}&controls=0&modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&disablekb=1&fs=0`}
+                    className="w-[150%] h-[150%] pointer-events-none"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     frameBorder="0"
                   />
